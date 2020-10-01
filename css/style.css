@@ -1,3 +1,17 @@
+/* General */
+section > h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+section {
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
 /*!* Header *!*/
 header {
     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("images/photo-1490645935967-10de6ba17061.jpg");
@@ -48,17 +62,6 @@ header {
 }
 
 /* Food Section */
-.food-section {
-    padding-top: 40px;
-    height: auto;
-    padding-bottom: 40px;
-}
-
-.food-section > h1 {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
 .img-container > img {
     margin: 5px;
     width: 200px;
@@ -66,6 +69,74 @@ header {
 }
 
 /* Food Reviews */
-.review-section {
+.testimonial-section {
+    background-color: #ecf0f1;
+}
 
+.customer-testimonial {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.customer-testimonial__content-review {
+    width: 80%;
+    margin: 0 50px 0 50px;
+}
+
+.customer-testimonial__content-review > p {
+    text-align: justify;
+}
+
+.control-customer-testimonial {
+    font-size: 25px;
+    vertical-align: center;
+    align-self: center;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+.disable-control-customer-testimonial {
+    color: #a9a8a8;
+    cursor: default;
+}
+
+.food-reviewer {
+    font-weight: bold;
+    float: right;
+    text-transform: uppercase;
+}
+
+/* Form Reviews Section */
+.btn-form-review-section {
+    margin-top: 20px;
+    display: inline-block;
+    margin-bottom: 40px;
+    float: right;
+    margin-right: 16%;
+}
+
+.form-review {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.form-review--colon {
+    margin-right: 15px;
+}
+
+/* Video Section */
+.video-section {
+    background-color: #ecf0f1;
+}
+
+.list-of-video {
+    width: 90%;
+    margin-left: 8.5%;
+}
+
+.col-video:not(:first-child) {
+    margin-left: 10px;
 }
