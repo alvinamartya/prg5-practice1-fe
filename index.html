@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Review</title>
-    <link rel="stylesheet" href="vendor/css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="vendor/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="vendor/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="/js/index.js"></script>
 </head>
+
 <body>
 <!-- Header -->
 <header>
@@ -14,7 +17,9 @@
         <div class="row navigation">
             <ul class="navigation-item">
                 <li><a href="#our-products">Our Products</a></li>
-                <li><a href="#food-reviews">Customer Reviews</a></li>
+                <li><a href="#food-reviews">Testimonial</a></li>
+                <li><a href="#form-reviews">Form Review</a></li>
+                <li><a href="#video-section">Our Activity</a></li>
             </ul>
         </div>
         <div class="food-quotes">
@@ -24,7 +29,7 @@
 </header>
 
 <!-- Foods Section -->
-<section class="food-section" id="our-products">
+<section id="our-products">
     <h1>Our Products</h1>
 
     <div class="container">
@@ -80,8 +85,102 @@
 </section>
 
 <!-- Food Review -->
-<section class="review-section" id="food-reviews">
+<section class="testimonial-section" id="food-reviews">
+    <h1>Testimonials</h1>
+    <div class="container">
+        <div class="customer-testimonial">
+            <i class="ion-chevron-left control-customer-testimonial disable-control-customer-testimonial"></i>
+            <div class="customer-testimonial__content-review">
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                    printer took a
+                    galley of type and scrambled it to make a type specimen book. It has survived not only five
+                    centuries, but also
+                    the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
+                    1960s with the
+                    release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing software
+                    like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
 
+                <p class="food-reviewer">Alvin Amartya - Student Politeknik Manufaktur Astra</p>
+            </div>
+            <i class="ion-chevron-right control-customer-testimonial disable-control-customer-testimonial"></i>
+        </div>
+    </div>
+</section>
+
+<!-- Add Customer Reviews Section -->
+<section class="form-review-section" id="form-reviews">
+    <h1>Form Review</h1>
+
+    <div class="form-review">
+        <form action="" method="post">
+            <div class="form-row form-group justify-content-center">
+                <div class="col-2"><label for="name">Name</label></div>
+                <span class="form-review--colon">:</span>
+                <div class="col-6"><input type="text" id="name" class="form-control" placeholder="Your Name"></div>
+            </div>
+
+            <div class="form-row form-group justify-content-center">
+                <div class="col-2"><label for="job">Job</label></div>
+                <span class="form-review--colon">:</span>
+                <div class="col-6"><input type="text" id="job" class="form-control" placeholder="Your Job"></div>
+            </div>
+
+            <div class="form-row form-group justify-content-center">
+                <div class="col-2"><label for="company">Company</label></div>
+                <span class="form-review--colon">:</span>
+                <div class="col-6"><input type="text" id="company" class="form-control" placeholder="Your Company">
+                </div>
+            </div>
+
+            <div class="form-row form-group justify-content-center">
+                <div class="col-2"><label for="comment">Comment</label></div>
+                <span class="form-review--colon">:</span>
+                <div class="col-6"><textarea name="comment" id="comment" class="form-control"
+                                             placeholder="Any comments, questions or suggestions?"></textarea></div>
+            </div>
+
+            <div class="btn-form-review-section">
+                <input id="btn-submit" type="button" value="Submit" class="btn btn-primary">
+                <input id="btn-clear" type="button" value="Clear" class="btn btn-danger">
+            </div>
+        </form>
+    </div>
+</section>
+
+<!-- Clearfix -->
+<div class="clearfix"></div>
+<section class="video-section" id="video-section">
+    <h1>Our Activity</h1>
+    <div class="list-of-video ">
+        <div class="row">
+            <div class="col4 col-video">
+                <iframe width="420" height="315" src="https://www.youtube.com/embed/8gCez6s01PM">
+                </iframe>
+            </div>
+            <div class="col4 col-video">
+                <iframe width="420" height="315" src="https://www.youtube.com/embed/ujXykUf0PoE">
+                </iframe>
+            </div>
+            <div class="col4 col-video">
+                <iframe width="420" height="315" src="https://www.youtube.com/embed/BQEW04hOOOc">
+                </iframe>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col4 col-video">
+                <iframe width="420" height="315" src="https://www.youtube.com/embed/66BeoTSRl0o">
+                </iframe>
+            </div>
+            <div class="col4 col-video">
+                <iframe width="420" height="315" src="https://www.youtube.com/embed/c33obCr0a2U">
+                </iframe>
+            </div>
+        </div>
+    </div>
 </section>
 </body>
 </html>
