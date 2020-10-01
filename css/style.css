@@ -1,4 +1,4 @@
-/* Header */
+/*!* Header *!*/
 header {
     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("images/photo-1490645935967-10de6ba17061.jpg");
     background-size: cover;
@@ -6,7 +6,7 @@ header {
     background-attachment: fixed;
 }
 
-/* Navigation */
+/*!* Navigation *!*/
 .navigation {
     margin-left: 25px;
     margin-right: 25px;
@@ -14,7 +14,7 @@ header {
 }
 
 .navigation-item {
-    margin-top: 20px;
+    margin-top: 30px;
     float: right;
     list-style: none;
 }
@@ -51,6 +51,7 @@ header {
 .food-section {
     padding-top: 40px;
     height: auto;
+    padding-bottom: 40px;
 }
 
 .food-section > h1 {
@@ -58,6 +59,13 @@ header {
     margin-bottom: 40px;
 }
 
-.food-section > table {
-    margin-bottom: 40px;
+.img-container > img {
+    margin: 5px;
+    width: 200px;
+    height: 200px;
+}
+
+/* Food Reviews */
+.review-section {
+
 }
